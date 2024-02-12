@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    p{
+        color: black;
+    }
+    body{
+        color: black;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .imges img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .rate {
+        background-color: #ffbe00;
+        color: #fff;
+        display: inline-block;
+        font-size: 10px;
+        border-radius: 20px;
+        padding: 2px 5px 2px 5px;
+    }
+    .hover i{
+        transition: all 0.5s;
+    }
+    .hover:hover i{
+        color: red;
+    }
+</style>
+
+<body>
+
+    <header class="bg-dark py-2">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="col-2 d-flex justify-content-start">
+                        <div class="logos">
+                            <a href="index.html">
+                                <h1>My Cart</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <nav>
+                            <ul class="d-flex justify-content-center align-items-center">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">electronics</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mens & Womens</a>
+                                </li>
+                                <li>
+                                    <a href="#">Baby & Kids</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home & Furniture</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tv & Appliance</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end ">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="Cart.html">
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-7" id="row2"></div>
+            <div class="col-5">
+                <div class="card p-3">
+                    <div class="billing d-flex justify-content-between align-items-center">
+                        <div class="name">
+                            <h5>Bill To : xyz</h5>
+                        </div>
+                        <div>
+                            <p id="dt"></p>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Items</th>
+                                    <th scope="col">Oty</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="billing d-flex justify-content-between">
+                        <div class="name d-flex">
+                            <div class="">
+                                <p class="p-0">Payment :</p>
+                            </div>
+                            <div class="">
+                                <p class="p-0">Credit Card <br>ID 4758958 <br>Bank Name <br>BOI</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="p-0 m-0" id="price"></p>
+                            <p class="p-0 m-0" id="price2"></p>
+                            <p class="p-0 m-0" id="price3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
